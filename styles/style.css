@@ -1,0 +1,148 @@
+/* /* .navbar-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 950px;
+    height: 67px;
+} */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-aligning-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 145px; */
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+/* Shared styles */
+.navbar-section,
+.logo-name,
+.list-items,
+.btn-contact {
+    .quicksand-font {
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        /* font-weight: <weight>;*/
+    }
+
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.list-items {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 35px;
+    list-style-type: none;
+}
+
+.orange-li-home {
+    font-size: 20px;
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+
+.sky-blue-li-about {
+    font-size: 20px;
+    color: rgb(1, 172, 253);
+    font-weight: 700;
+}
+
+.bluish-green-li-facilities {
+    font-size: 20px;
+    color: rgb(5, 212, 223);
+    font-weight: 700;
+}
+
+.violet-li-admission {
+    font-size: 20px;
+    color: rgb(93, 88, 239);
+    font-weight: 700;
+}
+
+.btn-contact {
+    width: 197px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    ;
+    background-color: rgb(254, 163, 1);
+    font-family: Quicksand;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.icn-hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.icn-hamburger i {
+    color: orange;
+    font-size: 33px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media screen and (max-width: 576px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        display:flex;
+        justify-content: space-between;
+        margin-right: 0px;
+        padding-left: auto;
+        position: relative;
+        /* align-items: flex-start;
+        flex-direction: column; */
+    }
+
+    .navbar-aligning-div {
+        padding: 10px
+    }
+
+    .list-items,
+    .btn-contact,
+    h1 {
+        display: none;
+    }
+
+    .icn-hamburger {
+        display: block;
+    }
+
+    .navbar::after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 100%;
+        margin-top: 15px;
+        background-color: #fff;
+    }
+    .logo {
+        margin-left: 70px;
+        /* gap: 150px; */
+        display: flex;
+        justify-content: space-between;
+        /* align-items: center; */
+        flex: 1; /* Takes all available space on the left */
+      }
+}
+
+
