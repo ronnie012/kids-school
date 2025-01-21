@@ -186,16 +186,9 @@ button {
     font-size: 20px;
     font-weight: 600;
     line-height: 22px;
-    margin-top: 45px;
+    margin-top: 0px;
     margin-bottom: 32px;
 }
-
-/* .about-school {
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 25px;
-
-} */
 
 .li-about-school {
     font-size: 16.96px;
@@ -204,7 +197,7 @@ button {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 19px
+    gap: 17px
 }
 
 .footer-typography {
@@ -280,7 +273,6 @@ button {
         height: 413px;
         margin: 0px 20px;
         gap: 20px;
-        /* padding-bottom: ; */
     }
 
     .banner-left {
@@ -293,7 +285,6 @@ button {
         font-weight: 700;
         line-height: 40px;
         text-align: center;
-        /* padding-top: ; */
         padding-bottom: 18px;
     }
 
@@ -320,9 +311,6 @@ button {
         justify-content: space-between;
         margin-left: 30px;
         margin-right: 0px;
-        /* margin-left: 50px;
-        margin-right: 50px; */
-        /* padding: 81px 148px 114px 60px  ; */
     }
 
     .p-footer {
@@ -335,9 +323,10 @@ button {
         display: flex;
         gap: 10px;
     }
-
+    .about-school,
     .keep-in-touch {
         display: flex;
         flex-direction: row;
+        margin-top: 45px;
     }
 }
