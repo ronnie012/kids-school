@@ -37,7 +37,6 @@
 
 .list-items {
     display: flex;
-    /* justify-content: space-between; */
     gap: 35px;
     list-style-type: none;
 }
@@ -88,8 +87,8 @@
     font-size: 33px;
 }
 
-
 /* Banner Section */
+
 .banner-container {
     display: flex;
     margin: 40px 110px;
@@ -151,6 +150,66 @@ button {
     gap: 10;
     padding: 10px;
     margin: 24px 0px;
+}
+
+/* Footer Section */
+.footer-section-background {
+    background: rgb(1, 172, 253);
+}
+
+.parent-container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 81px 148px 114px 60px;
+}
+
+.logo-education {
+    display: flex;
+}
+
+.kids-edu-h2 {
+    font-size: 35.73px;
+    font-weight: 700;
+    line-height: 33.5px;
+    letter-spacing: 0%
+}
+
+.p-footer {
+    margin-top: 35px;
+}
+
+.about-school,
+.keep-in-touch {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 45px;
+    margin-bottom: 32px;
+}
+
+/* .about-school {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 25px;
+
+} */
+
+.li-about-school {
+    font-size: 16.96px;
+    font-weight: 500;
+    line-height: 21px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 19px
+}
+
+.footer-typography {
+    font-family: Quicksand;
+    color: rgb(255, 255, 255);
 }
 
 /* Media Query for Mobile Responsiveness */
@@ -223,9 +282,11 @@ button {
         gap: 20px;
         /* padding-bottom: ; */
     }
+
     .banner-left {
         padding-top: 11px;
     }
+
     .h1-typography {
         font-family: Quicksand;
         font-size: 36px;
@@ -245,7 +306,6 @@ button {
         text-align: center;
         padding-left: 2.5px;
         padding-right: 2.5px;
-
     }
 
     .btn-shared-style {
@@ -253,4 +313,31 @@ button {
         margin: 18px 85px;
     }
 
+    /* Footer Section */
+    .parent-container-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 30px;
+        margin-right: 0px;
+        /* margin-left: 50px;
+        margin-right: 50px; */
+        /* padding: 81px 148px 114px 60px  ; */
+    }
+
+    .p-footer {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+
+    .social-logos {
+        display: flex;
+        gap: 10px;
+    }
+
+    .keep-in-touch {
+        display: flex;
+        flex-direction: row;
+    }
 }
