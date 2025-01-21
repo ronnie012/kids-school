@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* Navbar Section */
 .navbar-aligning-div {
     display: flex;
     justify-content: space-between;
@@ -14,7 +15,7 @@
     padding-right: 100px;
 }
 
-/* Shared styles */
+/* Navbar Section Shared styles */
 .navbar-section,
 .logo-name,
 .list-items,
@@ -23,7 +24,6 @@
         font-family: "Quicksand", serif;
         font-optical-sizing: auto;
         font-style: normal;
-        /* font-weight: <weight>;*/
     }
 
 }
@@ -72,7 +72,6 @@
     border: none;
     border-radius: 12px;
     color: rgb(255, 255, 255);
-    ;
     background-color: rgb(254, 163, 1);
     font-family: Quicksand;
     font-weight: 600;
@@ -89,13 +88,80 @@
     font-size: 33px;
 }
 
+
+/* Banner Section */
+.banner-container {
+    display: flex;
+    margin: 40px 110px;
+}
+
+.banner-left {
+    padding-top: 122px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+body,
+button {
+    .quicksand-font {
+        font-family: "Quicksand", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+}
+
+.h1-typography {
+    font-family: Quicksand;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: left;
+    padding-bottom: 24px;
+}
+
+.orange-h1 {
+    color: rgb(254, 163, 1)
+}
+
+.blue-h1 {
+    color: rgb(1, 172, 253);
+}
+
+.p-typography {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+}
+
+.btn-shared-style {
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    width: 197px;
+    height: 50px;
+    gap: 10;
+    padding: 10px;
+    margin: 24px 0px;
+}
+
 /* Media Query for Mobile Responsiveness */
 @media screen and (max-width: 576px) {
 
     body {
         overflow-x: hidden;
+        margin-right: 0;
     }
 
+    /* Navbar Section */
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -114,7 +180,7 @@
 
     .list-items,
     .btn-contact,
-    h1 {
+    .h1-logo-name {
         display: none;
     }
 
@@ -138,4 +204,50 @@
         justify-content: space-between;
         flex: 1;
     }
+
+    /* Banner Section */
+    .banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20;
+        margin: 0 !important;
+        padding: 20px 0px 20px 0px;
+    }
+
+    .hero-img {
+        width: 340px;
+        height: 413px;
+        margin: 0px 20px;
+        gap: 20px;
+        /* padding-bottom: ; */
+    }
+    .banner-left {
+        padding-top: 11px;
+    }
+    .h1-typography {
+        font-family: Quicksand;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        /* padding-top: ; */
+        padding-bottom: 18px;
+    }
+
+    .p-typography {
+        color: rgb(17, 17, 17);
+        font-family: Quicksand;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .btn-shared-style {
+        padding: 6px 24px 6px 24px;
+        margin: 18px 85px;
+    }
+
 }
