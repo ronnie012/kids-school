@@ -217,7 +217,7 @@ button {
     }
 
     .hero-img {
-        width: 340px;
+        width: 346px;
         height: 413px;
         margin: 0px 20px;
         gap: 20px;
@@ -243,6 +243,9 @@ button {
         font-weight: 500;
         line-height: 18px;
         text-align: center;
+        padding-left: 2.5px;
+        padding-right: 2.5px;
+
     }
 
     .btn-shared-style {
