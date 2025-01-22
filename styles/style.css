@@ -174,7 +174,7 @@ button {
     font-family: Quicksand;
     font-weight: 700;
     font-size: 24px;
-    margin-bottom: 26px;
+    /* margin-bottom: 26px; */
 }
 
 .p-stories {
@@ -186,13 +186,21 @@ button {
     text-align: left;
 }
 
+.stories-container {
+    padding: 30px 0px;
+    /* padding-top: 0px; */
+    background-position: center;
+    background-image: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 100vh; */
+    background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
 .our-stories-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0px;
-    /* margin-left: 110px; */
-    /* margin-right: 110px; */
-    background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
 .half-grid-card {
@@ -201,7 +209,7 @@ button {
     height: 590px;
     border-radius: 16px;
     margin-left: 110px;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
     background: rgb(255, 255, 255);
     overflow: hidden;
 }
@@ -272,11 +280,7 @@ button {
 .quarter-cards-holder {
     display: grid;
     margin-bottom: 80px;
-    /* align-items: stretch; */
-    /* justify-items: left; */
-    /* gap: 0px; */
     grid-template-columns: repeat(2, 1fr);
-    /* padding-left: 0px; */
 }
 
 .quarter-card {
@@ -358,9 +362,15 @@ button {
 
 .our-stories-btn {
     display: flex;
-    justify-content: end;
-    margin-left: 200px;
-    margin-bottom: 60px;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+
+    /* align-items: end;
+    margin-top: 80px; */
+    /* margin-bottom: 30px; */
 }
 
 /* Footer Section */
@@ -513,6 +523,192 @@ button {
     .btn-shared-style {
         padding: 6px 24px 6px 24px;
         margin: 18px 85px;
+    }
+
+    /* Stories Section */
+    .stories-container {
+        padding: 30px 0px;
+        /* padding-top: 0px; */
+        background-position: center;
+        background-image: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        /* height: 100vh; */
+        background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    }
+
+    /* .our-stories-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+    } */
+
+    .half-grid-card {
+        display: none;
+    }
+
+    .quarter-cards-holder {
+        display: grid;
+        margin-bottom: 80px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn2,
+    .btn4,
+    .btn5 {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: center;
+        width: 103px;
+        height: 22px;
+        left: 38px;
+        top: 314px;
+        border-radius: 47.93px;
+        background: rgb(149, 178, 38);
+        border: none;
+        margin-left: 22px;
+        transform: translateY(-15px);
+    }
+
+    .btn5 {
+        color: rgb(255, 255, 255);
+        width: 75px !important;
+        height: 22px !important;
+    }
+
+    .btn3 {
+        width: 103px;
+        height: 22px;
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 9px;
+        font-weight: 500;
+        line-height: 17px;
+        text-align: center;
+        text-transform: capitalize;
+        background-color: rgb(93, 88, 240);
+        margin-left: 22px;
+        transform: translateY(-15px);
+    }
+
+    /* .btn1 {
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        text-transform: capitalize;
+    } */
+
+    /* .btn2,
+    .btn4,
+    .btn5 {
+        width: 103px;
+        height: 22px;
+        color: rgb(255, 255, 255);
+        font-family: Raleway;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+        text-align: center;
+        text-transform: capitalize;
+        background-color: rgb(149, 178, 38);
+        margin-left: 38px;
+    } */
+
+    .quarter-cards-holder {
+        display: grid;
+        margin-bottom: 80px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .quarter-card {
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 17px;
+        padding-left: 23px;
+        padding-top: 15px;
+    }
+
+    .quarter-grid-card2 {
+        position: relative;
+        width: 170px;
+        height: 210px;
+        border-radius: 9px;
+        background: rgb(255, 255, 255);
+        margin-bottom: 12px;
+        margin-left: 12px;
+        overflow: hidden;
+    }
+
+    .story2 {
+        position: relative;
+        width: 170px;
+        height: 105px;
+    }
+
+    .quarter-grid-card3 {
+        position: relative;
+        width: 170px;
+        height: 210px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        margin-left: 12px;
+        margin-bottom: 12px;
+        /* margin-left: 0px; */
+        overflow: hidden;
+    }
+
+    .story3 {
+        position: relative;
+        width: 170px;
+        height: 105px;
+
+    }
+
+    .quarter-grid-card4 {
+        position: relative;
+        width: 170px;
+        height: 210px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        margin-left: 12px;
+        overflow: hidden;
+    }
+
+    .story4 {
+        position: relative;
+        width: 170px;
+        height: 105px;
+    }
+
+    .quarter-grid-card5 {
+        position: relative;
+        width: 170px;
+        height: 210px;
+        border-radius: 16px;
+        background: rgb(255, 255, 255);
+        margin-left: 12px;
+        overflow: hidden;
+    }
+
+    .story5 {
+        position: relative;
+        width: 170px;
+        height: 105px;
+    }
+
+    .our-stories-btn {
+        display: flex;
+        justify-content: center;
+        padding-top: 80px;
+        padding-bottom: 60px;
     }
 
     /* Footer Section */
